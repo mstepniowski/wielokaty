@@ -1,0 +1,23 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #ebecee;
+}
+
+.content {
+	width: 960px;
+	margin: 60px auto;
+	padding: 0;
+}
+
+.logo {
+	width: 400px;
+	margin: 0 280px;
+	padding: 0;
+}
+
+.player {
+	width: 640px;
+	margin: 20px 160px 0 160px;
+	padding: 0;
+}
