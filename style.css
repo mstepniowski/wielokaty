@@ -6,18 +6,83 @@ body {
 }
 
 .content {
-	width: 640px;
+	width: 960px;
 	margin: 40px auto;
 	padding: 0;
 }
 
 .logo {
 	width: 400px;
-	margin: 0 120px;
+	margin: 0 280px;
 	padding: 0;
 }
 
 .player {
 	width: 640px;
 	padding: 0;
+}
+
+.schedule table {
+	margin: 20px 10px;
+	border-left: 1px solid #AAA;
+	border-top: 1px solid #AAA;
+	width: 960px;
+}
+
+.schedule th, .schedule td {
+	border-bottom: 1px solid #AAA;
+	border-right: 1px solid #AAA;
+	padding: 19px 10px 20px 10px;
+	height: 20px;
+}
+
+.day {
+	width: 20px;
+	text-align: right;
+}
+
+.weekday {
+	width: 100px;
+}
+
+.schedule {
+	position: relative;
+}
+
+.s {
+	position: absolute;
+	width: 35px;
+	line-height: 18px;
+	padding: 5px 5px;
+	color: #fff;
+	background-color: #935;
+}
+
+.s span {
+	display: block;
+	margin-top: 10px;
+	width: 160px;
+	height: 140px;
+	text-align: center;
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
+
+.c4, .c8, .c9 {
+	background-color: #fff;
+}
+
+.c10, .c11, .c12 {
+	background-color: #ccc;
+}
+
+.c13, .c14 {
+	background-color: #999;
+}
+
+.c15 {
+	background-color: #666;
 }
