@@ -5,16 +5,24 @@ body {
 	font-family: 'Source Code Pro', sans-serif;
 }
 
-.content {
+.content, .content-narrow {
 	width: 960px;
 	margin: 40px auto;
 	padding: 0;
 }
 
-.logo {
+.content-narrow {
+	width: 640px;
+}
+
+.logo, .logo-narrow {
 	width: 400px;
 	margin: 0 280px;
 	padding: 0;
+}
+
+.logo-narrow {
+	margin: 0 120px;
 }
 
 .player {
