@@ -3,6 +3,7 @@ body {
 	padding: 0;
 	background-color: #ebecee;
 	font-family: 'Source Code Pro', sans-serif;
+	font-size: 16px;
 }
 
 .content, .content-narrow {
@@ -30,14 +31,47 @@ body {
 	padding: 0;
 }
 
-.schedule table {
-	margin: 20px 10px;
+.tabs-wrapper {
+	margin-top: 20px;
+}
+
+.tabs {
+	display: table-row;
+}
+
+.tabs li {
+	display: table-cell;
+	padding: 10px;
+	border: 1px solid #AAA;
+	border-bottom: none;
+	border-radius-top-left: 5px;
+}
+
+.tabs li.active-schedule, .tabs li.active-activities {
+	border-bottom: none;
+	color: #FFF;
+}
+
+.tabs li.active-schedule {
+	background-color: #935;
+}
+
+.tabs li.active-activities {
+	background-color: #395;
+}
+
+.schedule, .activities {
+	border-top: 4px solid #AAA;
+	position: relative;
+}
+
+.schedule table, .activities table {
+	margin-bottom: 20px;
 	border-left: 1px solid #AAA;
-	border-top: 1px solid #AAA;
 	width: 960px;
 }
 
-.schedule th, .schedule td {
+.schedule th, .schedule td, .activities th, .activities td {
 	border-bottom: 1px solid #AAA;
 	border-right: 1px solid #AAA;
 	padding: 19px 10px 20px 10px;
@@ -53,15 +87,11 @@ body {
 	width: 100px;
 }
 
-.schedule {
-	position: relative;
-}
-
 .s {
 	position: absolute;
 	width: 35px;
 	line-height: 18px;
-	padding: 5px 5px;
+	padding: 5px;
 	color: #fff;
 	background-color: #935;
 }
@@ -77,6 +107,24 @@ body {
 	-ms-transform: rotate(-90deg);
 	-o-transform: rotate(-90deg);
 	transform: rotate(-90deg);
+}
+
+.a {
+	position: absolute;
+	height: 49px;
+	border-bottom: 1px solid #AAA;
+	line-height: 18px;
+	color: #fff;
+	padding: 2px 5px 8px 5px;
+	background-color: #395;
+	font-size: 0.8em;
+}
+
+.a b {
+	display: block;
+	font-size: 0.8em;
+	color: #ddd;
+	font-weight: normal;
 }
 
 .c4, .c8, .c9 {
